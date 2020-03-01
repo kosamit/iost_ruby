@@ -9,15 +9,14 @@ Gem::Specification.new do |spec|
   spec.email         = ["kosamit@gmail.com"]
 
   spec.summary       = %q{IOST SDK for Ruby.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.description   = %q{IOST SDK for Ruby. This is development edition.}
+  spec.homepage      = "https://github.com/kosamit/iost_ruby"
   spec.license       = "MIT"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "https://github.com/kosamit/iost_ruby"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/kosamit/iost_ruby"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -31,4 +30,17 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  
+  spec.add_dependency 'ecdsa', '~> 1.1'
+  spec.add_dependency 'faraday', '~> 0.17'
+  spec.add_dependency 'faraday_middleware', '~> 0.14'
+  spec.add_dependency 'json', '~> 2.3'
+  spec.add_dependency 'base58', '~> 0.2.3'
+  spec.add_dependency 'btcruby', '~> 1.8'
+  spec.add_dependency 'ed25519', '~> 1.2', '>= 1.2.4'
+  spec.add_dependency 'sha3', '~> 1.0', '>= 1.0.1'
+  spec.add_dependency 'openssl', '~> 2.1', '>= 2.1.2'
+  spec.add_dependency 'tweetnacl', '~> 1.0'
+  spec.add_dependency 'digest-sha3'
+  spec.add_dependency 'fast_jsonapi', '~> 1.5'
 end

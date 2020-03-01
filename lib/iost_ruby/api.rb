@@ -1,9 +1,8 @@
-require 'pp'
-
 module IostRuby
   class Api
-
-    @client ||= IostRuby::Client.new
+    def initialize(options = {})
+      @client ||= IostRuby::Client.new(options)
+    end
     
     def node_info
       @client.request :get, 'getNodeInfo'
