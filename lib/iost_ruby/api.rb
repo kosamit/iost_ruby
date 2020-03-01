@@ -61,8 +61,8 @@ module IostRuby
       @client.request :post, "getContractStorage", "{\"id\":\"#{id}\",\"key\":\"#{key}\",\"field\":\"#{field}\",\"by_longest_chain\":#{by_longest_chain}}"
     end
 
-    def contract_storage_field(id, key, field, by_longest_chain = true)
-      @client.request :post, "getContractStorageFields", "{\"id\":\"#{id}\",\"key\":\"#{key}\",\"field\":\"#{field}\",\"by_longest_chain\":#{by_longest_chain}}"
+    def contract_storage_field(id, key, by_longest_chain = true)
+      @client.request :post, "getContractStorageFields", "{\"id\":\"#{id}\",\"key\":\"#{key}\",\"by_longest_chain\":#{by_longest_chain}}"
     end
 
     def batch_contract_storage
