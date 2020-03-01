@@ -29,16 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   
-  spec.add_dependency 'ecdsa', '~> 1.1'
   spec.add_dependency 'faraday', '~> 0.17'
   spec.add_dependency 'faraday_middleware', '~> 0.14'
   spec.add_dependency 'json', '~> 2.3'
-  spec.add_dependency 'base58', '~> 0.2.3'
-  spec.add_dependency 'btcruby', '~> 1.8'
-  spec.add_dependency 'ed25519', '~> 1.2', '>= 1.2.4'
-  spec.add_dependency 'sha3', '~> 1.0', '>= 1.0.1'
-  spec.add_dependency 'openssl', '~> 2.1', '>= 2.1.2'
-  spec.add_dependency 'tweetnacl', '~> 1.0'
-  spec.add_dependency 'digest-sha3'
-  spec.add_dependency 'fast_jsonapi', '~> 1.5'
 end
