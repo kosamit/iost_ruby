@@ -13,8 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/kosamit/iost_ruby"
   spec.license       = "MIT"
 
-  spec.metadata["allowed_push_host"] = "https://github.com/kosamit/iost_ruby"
-
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/kosamit/iost_ruby"
 
